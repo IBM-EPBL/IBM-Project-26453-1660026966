@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="template/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="bg-primary text-white">
+    <h3 class="text-center">IBM object storage access & IBM Watson</h3>
+    <div class="container">
+      <img
+        src="https://democza.s3.jp-tok.cloud-object-storage.appdomain.cloud/f82001c8ef0f754f9e0d6586acd227f8.jpg"
+        width="150px"
+      />
+      <img
+        src="https://democza.s3.jp-tok.cloud-object-storage.appdomain.cloud/WhatsApp%20Image%202022-10-26%20at%2010.28.49%20PM.jpeg"
+        width="150px"
+      />
+      <img
+        src="https://democza.s3.jp-tok.cloud-object-storage.appdomain.cloud/WhatsApp%20Image%202022-10-26%20at%2010.28.49%20PM%20(1).jpeg"
+        width="150px"
+      />
+      <img
+        src="https://democza.s3.jp-tok.cloud-object-storage.appdomain.cloud/WhatsApp%20Image%202022-10-26%20at%2010.28.48%20PM.jpeg"
+        width="150px"
+      />
+    </div>
+  </body>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "00933e1d-0840-4194-8120-91c63ba17d94", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "7f230d68-bad4-4f50-af4c-d60099127807", // The ID of your service instance.
+      onLoad: function (instance) {
+        instance.render();
+      },
+    };
+    setTimeout(function () {
+      const t = document.createElement("script");
+      t.src =
+        "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+        (window.watsonAssistantChatOptions.clientVersion || "latest") +
+        "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</html>

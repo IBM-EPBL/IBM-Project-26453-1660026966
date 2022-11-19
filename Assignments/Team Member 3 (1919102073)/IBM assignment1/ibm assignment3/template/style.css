@@ -1,0 +1,15 @@
+.container {
+  flex: 20%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+  width: 150px;
+}
+body {
+  background-color: burlywood;
+}
