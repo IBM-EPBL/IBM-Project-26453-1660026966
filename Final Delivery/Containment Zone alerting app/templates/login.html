@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    
+    <title>Log In</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+  </head>
+  <body >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <div class="navbar-nav">
+            
+            <a class="nav-item nav-link" id="home" href="/">Home</a>
+        
+            <a class="nav-item nav-link" id="login" href="/login1">Login</a>
+            <a class="nav-item nav-link" id="signup" href="/adduser">Sign Up</a>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+    
+
+    <form action="{{ url_for('login') }}" method="POST">
+      <h3 align="center" style="padding-top: 50px;">Login</h3>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+      <input type="email" class="form-control" placeholder="Enter Email" name="email" required />
+        </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" placeholder="Enter Password" name="pwd" required /></div>
+      <br />
+      <input type="submit" value="submit" class="btn btn-primary"/><br />
+    </form>
+    <h6>{{ msg }}</h6>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    
+    <title>Log In</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+  </head>
+  <body >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <div class="navbar-nav">
+            
+            <a class="nav-item nav-link" id="home" href="/">Home</a>
+        
+            <a class="nav-item nav-link" id="login" href="/login1">Login</a>
+            <a class="nav-item nav-link" id="signup" href="/adduser">Sign Up</a>
+          </div>
+        </div>
+      </nav>
+<!-- {{msg}} -->
+
+<h1 align="center" style="padding-top:50px">Welcome to Containment Zone Alerting Application</h1>
+<p align="center" style="margin:50px">This application is intended to provide information about containment zones in a particular region by alerting people, through continuous monitoring of an individual's location.  Key benefits of the application are monitoring people's activity and alerting them of their safety movements.</p>
+</body>
+</html>
